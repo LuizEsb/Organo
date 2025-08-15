@@ -1,3 +1,24 @@
+:root{
+  --verde: #57C278;
+  --verde-secundario: #D9F7E9;
+  --verde-claro: #A6D157;
+  --verde-claro-secundario: #F0F8E2;
+  --verde-agua: #95FFD4;
+  --vermelho: #E06B69;
+  --vermelho-secundario: #FDE7E8;
+  --branco: #FFF;
+  --cinza-claro: #F2F2F2;
+  --azul-medio: #6278F7;
+  --azul: #82CFFA;
+  --azul-secundario: #E8F8FF;
+  --roxo: #DB6EBF;
+  --roxo-secundario: #FAE9F5;
+  --amarelo: #FFBA05;
+  --amarelo-secundario: #FFF5D9;
+  --laranja: #FF8A29;
+  --laranja-secundario: #FFEEDF;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
