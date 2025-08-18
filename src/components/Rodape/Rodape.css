@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--azul-medio);
+  padding: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+strong{
+    color: var(--verde-agua);
+}
+
+.lista-redes {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
