@@ -19,13 +19,17 @@ A Organo é uma aplicação de gestão de equipes que permite registrar colabora
 ## Como rodar o projeto:
 
 Certifique-se de que você tenha o Node e o json-server instalado,
+
 Abra a pasta do projeto na sua IDE,
+
 Rode o projeto localmente com este comando no terminal:
 
 ```bash
 npm start
 ```
-O projeto deve abrir automáticamente no seu navegador padrão. Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo parecido com "http://localhost:3000")
+O projeto deve abrir automaticamente no seu navegador padrão. 
+
+Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo parecido com "http://localhost:3000")
 
 ### Ferramentas utilizadas:
 
