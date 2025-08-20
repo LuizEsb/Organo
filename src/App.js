@@ -8,42 +8,54 @@ function App() {
   const [times, setTimes] = useState([
     {
       nome: "Programação",
-      corPrimaria: "var(--verde)",
-      corSecundaria: "var(--verde-secundario)",
+      cor: "#57C278",
     },
     {
       nome: "Front-end",
-      corPrimaria: "var(--azul)",
-      corSecundaria: "var(--azul-secundario)",
+      cor: "#82CFFA",
     },
     {
       nome: "UX e Design",
-      corPrimaria: "var(--roxo)",
-      corSecundaria: "var(--roxo-secundario)",
+      cor: "#E06B69",
     },
     {
       nome: "Data Science",
-      corPrimaria: "var(--verde-claro)",
-      corSecundaria: "var(--verde-claro-secundario)",
+      cor: "#A6D157",
     },
     {
       nome: "Devops",
-      corPrimaria: "var(--vermelho)",
-      corSecundaria: "var(--vermelho-secundario)",
+      cor: "#DB6EBF",
     },
     {
       nome: "Mobile",
-      corPrimaria: "var(--amarelo)",
-      corSecundaria: "var(--amarelo-secundario)",
+      cor: "#FFBA05",
     },
     {
       nome: "Inovação e Gestão",
-      corPrimaria: "var(--laranja)",
-      corSecundaria: "var(--laranja-secundario)",
+      cor: "#FF8A29",
     },
   ]);
 
-  const [colaboradores, setColaboradores] = useState([]);
+  const [colaboradores, setColaboradores] = useState([
+    {
+      nome:"LuizEsb",
+      cargo:"Dev",
+      imagem:"https://github.com/LuizEsb.png",
+      time:"Front-end"
+    },
+    {
+      nome:"Anderson",
+      cargo:"Instrutor",
+      imagem:"https://github.com/LuizEsb.png",
+      time:"Inovação e Gestão"
+    },
+    {
+      nome:"Daniel",
+      cargo:"Dev",
+      imagem:"https://github.com/LuizEsb.png",
+      time:"Data Science"
+    }
+  ]);
 
   function deletaColaborador() {
     console.log("deletando");
@@ -53,9 +65,9 @@ function App() {
     setTimes(
       times.map((time) => {
         if (time.nome === nome) {
-          time.corPrimaria = cor;
+          time.cor = cor;
         }
-        return time
+        return time;
       })
     );
   }
@@ -78,8 +90,7 @@ function App() {
         <Time
           key={time.nome}
           nome={time.nome}
-          corPrimaria={time.corPrimaria}
-          corSecundaria={time.corSecundaria}
+          cor={time.cor}
           colaboradores={colaboradores.filter(
             (colaborador) => colaborador.time === time.nome
           )}
