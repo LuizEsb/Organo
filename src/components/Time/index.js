@@ -11,7 +11,7 @@ const Time = (props) => {
       >
         <input
           value={props.cor}
-          onChange={(evento) => props.mudarCor(evento.target.value, props.nome)}
+          onChange={(evento) => props.mudarCor(evento.target.value, props.id)}
           type="color"
           className="input-cor"
         ></input>
