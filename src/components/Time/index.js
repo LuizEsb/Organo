@@ -1,6 +1,6 @@
 import "./Time.css";
 import Colaborador from "../Colaborador";
-import hexToRgba from "hex-to-rgba"
+import hexToRgba from "hex-to-rgba";
 
 const Time = (props) => {
   return (
@@ -19,6 +19,7 @@ const Time = (props) => {
         <div className="colaboradores">
           {props.colaboradores.map((colaborador) => (
             <Colaborador
+              id={colaborador.id}
               key={colaborador.nome}
               corDeFundo={props.cor}
               nome={colaborador.nome}

@@ -3,7 +3,7 @@ import Banner from "./components/banner/banner";
 import Formulario from "./components/Formulario";
 import Time from "./components/Time";
 import Rodape from "./components/Rodape";
-import { v4 as uuidv4 } from "uuid"; 
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
   const [times, setTimes] = useState([
@@ -47,29 +47,31 @@ function App() {
   const [colaboradores, setColaboradores] = useState([
     {
       id: uuidv4(),
-      nome:"LuizEsb",
-      cargo:"Dev",
-      imagem:"https://github.com/LuizEsb.png",
-      time:"Front-end"
+      nome: "LuizEsb",
+      cargo: "Dev",
+      imagem: "https://github.com/LuizEsb.png",
+      time: "Front-end",
     },
     {
       id: uuidv4(),
-      nome:"Anderson",
-      cargo:"Instrutor",
-      imagem:"https://github.com/LuizEsb.png",
-      time:"Inovação e Gestão"
+      nome: "Anderson",
+      cargo: "Instrutor",
+      imagem: "https://github.com/LuizEsb.png",
+      time: "Inovação e Gestão",
     },
     {
       id: uuidv4(),
-      nome:"Daniel",
-      cargo:"Dev",
-      imagem:"https://github.com/LuizEsb.png",
-      time:"Data Science"
-    }
+      nome: "Daniel",
+      cargo: "Dev",
+      imagem: "https://github.com/LuizEsb.png",
+      time: "Data Science",
+    },
   ]);
 
-  function deletaColaborador() {
-    console.log("deletando");
+  function deletaColaborador(id) {
+    setColaboradores(
+      colaboradores.filter((colaborador) => colaborador.id !== id)
+    );
   }
 
   function mudarCorDoTime(cor, id) {
