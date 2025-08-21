@@ -47,6 +47,7 @@ function App() {
   const [colaboradores, setColaboradores] = useState([
     {
       id: uuidv4(),
+      favorito: false,
       nome: "LuizEsb",
       cargo: "Dev",
       imagem: "https://github.com/LuizEsb.png",
@@ -54,6 +55,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: "Anderson",
       cargo: "Instrutor",
       imagem: "https://github.com/LuizEsb.png",
@@ -61,6 +63,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: "Daniel",
       cargo: "Dev",
       imagem: "https://github.com/LuizEsb.png",
@@ -93,6 +96,17 @@ function App() {
     setTimes([...times, { ...novoTime, id: uuidv4() }]);
   }
 
+  function resolverFavorito(id) {
+    setColaboradores(
+      colaboradores.map((colaborador) => {
+        if (colaborador.id === id) {
+          colaborador.favorito = !colaborador.favorito;
+        }
+        return colaborador;
+      })
+    );
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -115,6 +129,7 @@ function App() {
           )}
           aoDeletar={deletaColaborador}
           mudarCor={mudarCorDoTime}
+          aoFavoritar={resolverFavorito}
         />
       ))}
 
