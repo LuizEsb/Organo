@@ -1,6 +1,6 @@
 # Organo
 
-A Organo é uma aplicação de gestão de equipes que permite registrar colaboradores e organizá-los por times. Cada time possui um estilo característico, dinamizado através de props e elevação de dependências dos componentes. Desenvolvido durante meus estudos, me permitiu aprofundar os conhecimentos sobre React.js, componentes e o uso de seus Hooks.
+A Organo é uma aplicação de gestão de equipes que permite registrar colaboradores e organizá-los por times. Cada time possui um estilo característico, customizável dinamicamente através de props e elevação de dependências dos componentes. 
 
 ## Teste a versão completa [aqui](https://organo-three-green.vercel.app/)
 
@@ -9,12 +9,20 @@ A Organo é uma aplicação de gestão de equipes que permite registrar colabora
 ![Tela inicial organo](https://i.imgur.com/xtW2lnu.png)
 
 ## Tela de cadastro
+A aplicação conta com dois formulários. Um de cadastro de colaboradores, com nome, cargo, url da imagem do colaborador e time a que pertence. Já o de cadastro de times conta com um campo para o nome do time e uma seleção da cor característica do time.
 
-![Formulário de cadastro de colaborador](https://i.imgur.com/iwyc5be.png)
+![Formulário de cadastro de colaborador](https://i.imgur.com/tlO6g5v.png)
 
 ## Cards dos Times
+É possível favoritar os colaboradores ou removê-los do time clickando no X acima dele.
 
-![Design card times](https://i.imgur.com/1n7Lv5t.png)
+![Design card times](https://i.imgur.com/lqMudnj.png)
+
+Você também pode alterar as cores dos times em tempo real! E tudo isso só é possível, de maneira simples, graças ao virtual DOM e aos estados do React!
+
+![Mudando cor card times](https://i.imgur.com/mlwOGBe.png)
+
+Os times são removidos automaticamente quando não houverem mais colaboradores os compondo. 
 
 ## Como rodar o projeto:
 
@@ -31,6 +39,8 @@ O projeto deve abrir automaticamente no seu navegador padrão.
 
 Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo parecido com "http://localhost:3000")
 
+> Desenvolvido durante meus estudos, o projeto me permitiu aprofundar os conhecimentos sobre React.js, componentes e o uso de seus Hooks.
+
 ### Ferramentas utilizadas:
 
 * React.js
@@ -38,6 +48,7 @@ Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo pare
 * HTML
 * CSS
 * Vite
+* Bibliotecas como react-icons e hex-to-rgba
 
 ## Feito por:
 
