@@ -40,7 +40,7 @@ O projeto deve abrir automaticamente no seu navegador padrão.
 
 Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo parecido com "http://localhost:3000")
 
-> Desenvolvido durante meus estudos, o projeto me permitiu aprofundar os conhecimentos sobre React.js, componentes e o uso de seus Hooks.
+
 
 ### Ferramentas utilizadas:
 
@@ -50,6 +50,8 @@ Caso não abra, com Ctrl + clique acesse o link que o terminal exibir (algo pare
 * CSS
 * Vite
 * Bibliotecas como react-icons e hex-to-rgba
+
+> Desenvolvido durante meus estudos, o projeto me permitiu aprofundar os conhecimentos sobre React.js, componentes e o uso de seus Hooks.
 
 ## Feito por:
 
