@@ -4,14 +4,6 @@ A Organo é uma aplicação de gestão de equipes que permite registrar colabora
 
 ## Teste a versão completa [aqui](https://organo-three-green.vercel.app/)
 
-## Página inicial
-
-![Tela inicial organo](https://i.imgur.com/xtW2lnu.png)
-
-## Tela de cadastro
-A aplicação conta com dois formulários. Um de cadastro de colaboradores, com nome, cargo, url da imagem do colaborador e time a que pertence. Já o de cadastro de times conta com um campo para o nome do time e uma seleção da cor característica do time.
-
-![Formulário de cadastro de colaborador](https://i.imgur.com/tlO6g5v.png)
 
 ## Cards dos Times
 É possível favoritar os colaboradores ou removê-los do time clickando no X acima dele.
@@ -22,7 +14,16 @@ Você também pode alterar as cores dos times em tempo real! E tudo isso só é 
 
 ![Mudando cor card times](https://i.imgur.com/mlwOGBe.png)
 
-Os times são removidos automaticamente quando não houverem mais colaboradores os compondo. 
+Os times são removidos automaticamente quando não houverem mais colaboradores os compondo.
+
+## Página inicial
+
+![Tela inicial organo](https://i.imgur.com/xtW2lnu.png)
+
+## Tela de cadastro
+A aplicação conta com dois formulários. Um de cadastro de colaboradores, com nome, cargo, url da imagem do colaborador e time a que pertence. Já o de cadastro de times conta com um campo para o nome do time e uma seleção da cor característica do time.
+
+![Formulário de cadastro de colaborador](https://i.imgur.com/tlO6g5v.png)
 
 ## Como rodar o projeto:
 
